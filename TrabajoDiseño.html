@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Tienda Online</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #cabecera {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #cabecera .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #cabecera .logo img {
+        width: 150px;
+        margin-right: 30px;
+      }
+
+      .navegacion {
+        background-color: #444;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navegacion ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navegacion ul li {
+        margin: 0 20px;
+      }
+
+      .navegacion ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .navegacion ul li a:hover {
+        color: white;
+      }
+
+      .productoss {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 100px auto;
+        padding: 20px;
+      }
+
+      .productos {
+        border: 1px solid white;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+      }
+      /*Al pasar por encima de los productos, se proyecta una sombra en sus bordes*/
+      .productos:hover {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .productos img {
+        width: 100%;
+        height: auto;
+      }
+
+      .productos h2 {
+        font-size: 30px;
+        color: #302e2e;
+      }
+
+      .productos p {
+        font-size: 24px;
+        color: #353434;
+      }
+
+      .productos button {
+        background-color: #33ac4f;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .productos button:hover {
+        background-color: #26da4d;
+      }
+
+      #pie {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+      }
+
+      #pie a {
+        color: #c0bbbb;
+        text-decoration: none;
+      }
+
+      #pie a:hover {
+        color: white;
+      }
+
+      button,
+      .navegacion ul li a {
+        font-family: "Arial", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="cabecera">
+      <div class="logo">
+        <img src="logo.png" alt="la tineda" />
+        <h1>La tienda de Pepe</h1>
+      </div>
+    </header>
+
+    <nav class="navegacion">
+      <ul>
+        <li><a href="#">Ropa</a></li>
+        <li><a href="#">Gaming</a></li>
+        <li><a href="#">Salud</a></li>
+        <li><a href="#">Ejercicio</a></li>
+      </ul>
+    </nav>
+
+    <section class="productoss">
+      <div class="productos">
+        <img src="producto1.jpg" alt="Producto 1" />
+        <h2>Chaqueta negra</h2>
+        <p>30$</p>
+        <button>Añadir al carrito</button>
+      </div>
+
+      <div class="productos">
+        <img src="producto2.jpg" alt="Producto 2" />
+        <h2>Pantalones vaqueros</h2>
+        <p>100$</p>
+        <button>Añadir al carrito</button>
+      </div>
+
+      <div class="productos">
+        <img src="producto3.jpg" alt="Producto 3" />
+        <h2>Calcetines blancos</h2>
+        <p>150$</p>
+        <button>Añadir al carrito</button>
+      </div>
+
+      <div class="productos">
+        <img src="producto4.jpg" alt="Producto 4" />
+        <h2>Zapatillas</h2>
+        <p>500$</p>
+        <button>Añadir al carrito</button>
+      </div>
+
+      <div class="productos">
+        <img src="producto5.jpg" alt="Producto 5" />
+        <h2>Gorro de lana</h2>
+        <p>300$</p>
+        <button>Añadir al carrito</button>
+      </div>
+
+      <div class="productos">
+        <img src="producto6.jpg" alt="Producto 6" />
+        <h2>Collar</h2>
+        <p>1000,99$</p>
+        <button>Añadir al carrito</button>
+      </div>
+    </section>
+
+    <footer id="pie">
+      <p>Contacto: tiendapepe@gmail.com | Telefono: +34 666 36 88 97</p>
+      <p>
+        Síguenos en: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">Instagram</a> | <a href="#">Tiktok</a>
+      </p>
+    </footer>
+  </body>
+</html>
