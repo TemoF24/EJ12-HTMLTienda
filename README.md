@@ -45,10 +45,5 @@ Este es un ejemplo de una página web de una tienda online llamada "La tienda de
 1. Asegúrate de tener todas las imágenes necesarias en la misma carpeta que el archivo HTML.
 2. Abre el archivo `.html` en tu navegador para ver la página web en acción.
 
-## Contacto
 
-- Si tienes preguntas o dudas, puedes ponerte en contacto con nosotros por correo electrónico: tiendapepe@gmail.com.
-- Teléfono: +34 666 36 88 97.
-
-¡Disfruta de tu tienda online!
 
